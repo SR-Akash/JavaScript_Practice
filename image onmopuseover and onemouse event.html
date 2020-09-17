@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"> 
+   function newpic()
+   {
+       document.getElementById("img1").src="IMG_20200604_181220 (2).jpg";
+   }
+
+   function oldpic()
+   {
+    document.getElementById("img1").src="IMG_20200604_181220.jpg";
+   }
+    </script>
+</head>
+<body>
+    <img id="img1" onmouseover="newpic()" onmouseout="oldpic()" src="IMG_20200604_181220.jpg" width="300"> </img>
+
+     
+</body>
+</html>

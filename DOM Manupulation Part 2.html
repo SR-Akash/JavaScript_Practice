@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2> Jquery Selectore</h2>
+    <button id="btn1">Append</button> 
+    <button id="btn2">After</button>   
+    <button id="btn3">Prepend</button>  
+    <button id="btn4">Before</button>  
+    <button id="btn5">Remove</button>   
+    <button id="btn6">Empty</button>  
+    <div id="div1" class="divss">
+        <p id="pid" class="pclass">This is <i>first </i> div <b> first</b> para</p>
+    </div>
+
+</body>
+<script src="jquery.js" type="text/javascript"></script>
+
+<script>
+
+    $(document).ready(function(){
+    //append
+      $("#btn1").click(function(){
+        $("#div1").append("<b>This is second para in first division</b><br>")
+      });
+      //after
+      $("#btn2").click(function(){
+        $("#div1").after("<b>This is second para in first division</b><br>")
+      });
+      //prepend
+      $("#btn3").click(function(){
+        $("#div1").prepend("<b>This is second para in first division</b><br>")
+      });
+      //before
+      $("#btn4").click(function(){
+        $("#div1").before("<b>This is second para in first division</b><br>")
+      });
+      //remove
+      $("#btn5").click(function(){
+        $("p").remove("#pid")
+      });
+      //empty
+      $("#btn6").click(function(){
+        $("#div1").empty("<b>This is second para in first division</b><br>")
+      });
+
+    });
+
+</script>
+ 
+</html>

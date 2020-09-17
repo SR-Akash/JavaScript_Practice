@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2> Jquery Selectore</h2>
+    <button id="btn1">Add Class</button> 
+    <button id="btn2">Remove Class</button>   
+    <button id="btn3">Toggle Class</button>  
+    <button id="btn4">CSS</button>  
+
+    <div id="div1" class="divss">
+        <p id="pid" class="pclass">This is <i>first </i> div <b> first</b> para</p>
+    </div>
+
+</body>
+<script src="jquery.js" type="text/javascript"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+        $("#btn1").click(function(){
+            $("#div1").addClass("newdivss");
+        });
+
+        $("#btn2").click(function(){
+            $("#div1").removeClass("newdivss");
+        });
+
+        $("#btn3").click(function(){
+            $("#div1").toggleClass("newdivss");
+        });
+
+        $("#btn4").click(function(){
+            alert($("#div1").css("padding"));
+        });
+
+    });
+
+</script>
+ 
+</html>

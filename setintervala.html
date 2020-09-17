@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            var x = 0;
+            var seconds=0;
+            function started()
+            {
+                x =  window.setInterval(start,1000);
+                
+                
+            }
+            function stopped()
+            {
+                window.clearInterval(x);
+            }
+            function start()
+            {
+                document.getElementById("op").innerHTML=seconds+" seconds";
+                seconds++;
+                
+            }
+
+        </script>
+        <body>
+            
+            <button onclick="started()">start</button>
+            <br>
+            <h2 id="op">start execution</h2>
+            <button onclick="stopped()">stop</button>
+            
+        </body>
+    </head>
+</html>

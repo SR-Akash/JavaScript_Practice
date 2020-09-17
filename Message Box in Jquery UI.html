@@ -1,0 +1,63 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+       <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+       <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+      <h2>Message in JQuery UI</h2>
+      <div id="div1" class="divss">
+          <h3>Hello, My name is Saidur Rahman Akash</h3>
+          <br>
+          <button id="btn1">Click to show message box</button>
+      </div>
+
+      <div id="messagebox" value="Messagebox" class="divss">
+        <h3>This is me Saidur Rahman Akash</h3>
+        <img src="IMG_20200604_181220.jpg" width="200px">
+        <br>
+        <br>
+     
+    </div>
+    </body>
+
+   <script src="jquery.js" type="text/javascript"></script>
+   <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+   <script>
+       $("#btn1").click(function(){
+           $("#messagebox").dialog({
+               title:"Custom Message Box",
+               draggable:true,
+               resizeable:true,
+               height:300,
+               width:300,
+               modal:true,
+
+               buttons:[
+               {
+                   text:"Close",
+                   icon:"ui-icon-heart",
+                   click: function(){
+                       $(this).dialog("close");
+                   }
+               },
+
+               {
+                   text:"OK",
+                   icon:"ui-icon-heart",
+                   click: function(){
+                       $(this).dialog("close");
+                   }
+               }
+           ]
+
+           });
+        
+
+       });
+  
+   </script>
+   
+</html>

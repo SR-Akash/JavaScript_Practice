@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2> Jquery Selectore</h2>
+    <div id="id1" class="divss">
+        <p>This is first div first para</p>
+    </div>
+    <div id="id2" class="divss">
+        <p>This is second div second para</p>
+    </div>
+    <div id="id3" class="divss">
+        <p>This is third div third para</p>
+    </div>
+    <div id="id4" class="divss">
+        <ul>
+            <li>List Iteam 1 </li>
+            <li>List Iteam 2 </li>
+            <li>List Iteam 3 </li>
+            <li>List Iteam 4 </li>
+        </ul>
+    </div>
+    <button id="btn1">Clcik Me</button>
+    <button id="btn2">Clcik Me 2</button>
+    
+</body>
+<script src="jquery.js"></script>
+
+<script>
+    $(document).ready(function(){
+        //$("#btn1").dblclick(fun);
+
+        $("#btn1").mouseenter(fun);
+        $("#btn1").mouseleave(fun2);
+        $("#btn2").hover(fun,fun2);
+
+        function fun()
+        {
+            $(".divss p").fadeOut(1000);
+        }
+
+        function fun2()
+        {
+            $(".divss p").fadeIn(1000);
+        }
+    });
+
+</script>
+ 
+</html>

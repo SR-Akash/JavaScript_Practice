@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function valid()
+    {
+        var uname = document.getElementById("uname");
+        var pass = document.getElementById("pass");
+
+        if(uname.value.trim()=="")
+        {
+            //alert("blank is not used");
+            uname.style.border="solid 3px red";
+            document.getElementById("id1").style.visibility="visible";
+            return false;
+        }
+        else if(pass.value.trim()=="")
+        {
+            //alert("Blank is not allowd");
+           
+            return false;
+        }
+        else if(pass.value.trim().length<5)
+        {
+            pass.style.border="solid 2px red";
+            document.getElementById("pass1").style.visibility="visible";
+            return false;
+        }
+        else
+        return true;
+
+    }
+
+    </script>
+</head>
+<body>
+    <form onsubmit="return valid()" action="message.html">
+        <input id="uname" placeholder="Username" type="text" required>
+        <label id="id1" style="color:red; visibility: hidden;" >Invalid Input</label>
+        <br>
+        <br>
+        <input id="pass" placeholder="Password" type="password"required>
+        <label id="pass1" style="color:red; visibility: hidden;" >Your Password is too Short!</label>
+        
+        <br>
+        <br>
+
+        <button type="submit" >Submit </button>
+    </form>
+    
+</body>
+</html>

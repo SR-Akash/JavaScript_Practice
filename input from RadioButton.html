@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script type="text/javascript">
+
+function fun()
+{
+    var rd1 = document.getElementById("rd1");
+    var rd2 = document.getElementById("rd2");
+    
+    if(rd1.checked==true)
+        alert("You select button "+rd1.value);
+    else if(rd2.checked==true)
+        alert("You select button "+rd2.value);  
+    else
+        alert("Nothing is selected");
+}
+
+</script>
+<body>
+    <input id="rd1" name="grp" type="radio" value="A">A</input>
+    <br>
+    <input id="rd2" name="grp" type="radio" value="B">B</input>
+    <br>
+    <button onclick="fun()" id="btn">Click Me</button>
+</body>
+</html>

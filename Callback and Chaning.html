@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2> Jquery Selectore</h2>
+    <button id="btn1" style="background-color:cadetblue;"> Clcik Me</button> 
+    
+    <div id="id1" class="divss">
+        <p>This is first div first para</p>
+    </div>
+    <div id="id2" class="divss">
+        <p>This is second div second para</p>
+    </div>
+    <div id="id3" class="divss">
+        <p>This is third div third para</p>
+    </div>
+  
+  
+
+</body>
+<script src="jquery.js" type="text/javascript"></script>
+
+<script>
+    /*
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+        $("#id1").fadeToggle(2000,function(){
+            alert("Division is faded");
+        });
+    }); 
+    });*/
+
+    function msg()
+    {
+        alert("It's Working");
+    }
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+       // $("#id1").slideToggle(2000,msg);
+       //Chaning
+      $("#id1").slideUp(2000).slideDown(2000);
+    }); 
+    });
+  
+
+</script>
+ 
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+        <script>
+             var width = 500;
+             var diff = 2;
+             var x = 0;
+             function increase()
+             {  
+                window.clearInterval(x);
+                x = setInterval(expand,20)
+             }
+             function decrease()
+             {
+                window.clearInterval(x);
+                x = setInterval(shirink,20)
+             }
+             function expand()
+             {
+                 if(width<500)
+                 {
+                     width = width + diff;
+                     document.getElementById("img").style.width=width;
+                 }
+                 else{
+                     window.clearInterval(x);
+                 }
+             }
+             function shirink()
+             {
+                 if(width>100)
+                 {
+                     width = width - diff;
+                     document.getElementById("img").style.width=width;
+                 }
+                 else{
+                     window.clearInterval(x);
+                 }
+             }
+          
+
+        </script>
+    </head>
+    <body>
+
+        <img id="img" onmouseover="increase()" onmouseout="decrease()" src="990d671c0f7040bf1b34800ec941df6e.4.jpg" width = "500">
+
+    </body>
+
+
+
+</html>

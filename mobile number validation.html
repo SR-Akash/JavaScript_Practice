@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script type="text/javascript">
+    function buttoned()
+    {
+        var num = document.getElementById("text").value;
+        //var regx = /\0?1[3456789][0-9]{8}\b/
+        var regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
+        if(regx.test(num))
+        {
+            alert("mail is valid");
+        }
+        else
+        {
+            alert("mail is not valid");
+        }
+    }
+
+    </script>
+        <body>
+            <input id="text" placeholder="mail">
+            <br><br>
+            <button onclick="buttoned()">submit</button>
+            
+        </body>
+    
+</head>
+</html>

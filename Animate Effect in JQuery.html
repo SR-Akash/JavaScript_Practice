@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2> Jquery Selectore</h2>
+    <button id="btn1">Clcik Me</button> 
+    <button id="btn2">Clcik Me 2</button>
+    <button id="btn3">Animate</button>
+    <div id="id1" class="divss">
+        <p>This is first div first para</p>
+    </div>
+    <div id="id2" class="divss">
+        <p>This is second div second para</p>
+    </div>
+    <div id="id3" class="divss">
+        <p>This is third div third para</p>
+    </div>
+    <div id="id4" class="divss">
+        <ul>
+            <li>List Iteam 1 </li>
+            <li>List Iteam 2 </li>
+            <li>List Iteam 3 </li>
+            <li>List Iteam 4 </li>
+        </ul>
+    </div>
+    <div id="cid" class="cube">
+        <p>CUBE</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+<script src="jquery.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btn3").click(function(){
+            $("#cid").animate({
+                left:'150px',
+                opacity:'1',
+                width:'100px',
+                height:'100px'
+            },4000)
+        });
+    });
+
+</script>
+ 
+</html>

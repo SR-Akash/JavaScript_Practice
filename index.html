@@ -1,0 +1,216 @@
+<html>
+    <head>
+        <title>Home</title>
+       
+       <script type="text/javascript">
+
+        //JS is dynamically typed
+        //JS is loosely typed
+        //Variables   
+        /* 
+        var num=15; //number type
+        var nam="Akash"; // string
+        var falg = true; //boolean
+        
+        var x; //initialization
+        x= 5; //declaration  
+        */
+
+       //Oprators in JavaScript
+       /*
+       var x = 6;
+       if(x%2==0)
+       {
+           document.write("X is even number");
+       }
+       else
+       {
+           document.write("X is Odd Number");
+       }
+       */
+
+       //control statement (Switch Case)
+      /* var day=1;
+       switch(day)
+       {
+           case 1:
+               document.write("Saturday");
+               break;
+            case 2:
+               document.write("Sunday");
+                break;
+            case 3:
+               document.write("Monday");
+                break;
+            case 4:
+               document.write("Tuesday");
+           break;
+           default:
+               document.write("Wrong Input")
+       }
+       */
+
+      //Loop
+/*
+    for(var i=1;i<6;i++)
+    {
+        document.write("<h3>"+i*10+"</h3>");
+    }  
+
+*/
+/*
+    var x = 1;
+    while(x<10)
+    {
+        document.write("<h3>"+x+"</h3>");
+        x++;
+    }
+*/
+
+    //Functions
+    /*
+    function add()
+    {
+        var x = 6;
+        var y = 9;
+        result = x+y;
+        document.write(result);
+    }
+    add();*/
+/*
+    function add(x,y)
+    {
+
+        result = x+y;
+        return result;
+        
+    }
+    //add(1,2);
+    var ans=add("Akash","Tahera");
+    document.write(ans);
+    
+*/
+
+/*
+    //scope of variable
+    
+    var yy = 6; // global variable
+    a = 5; // a is a global variable by default
+    function myfunction()
+    { 
+        var xx = 5; // local variable
+        document.write("<h3>"+xx+"</h3>");
+        document.write("<h3>"+yy+"</h3>");// global variable can be accessed inside a function
+    }
+    myfunction();
+
+    document.write("<h3>"+xx+"</h3>"); //xx local variable so this statement will not be executd
+
+*/ 
+   /* 
+    //Array
+     var car1="Audi";
+     var car2="Volvo";
+     var car3 = "BMW";
+    
+     var cars = ["audi","volvo","bmw"];
+     cars.push("marcedes");
+     cars.push(45);
+     for(var i=0;i<cars.length;i++)
+     {
+        document.write("<h3>"+cars[i],"</h3> ");
+     }
+    */
+
+    //Objects
+    /*var brand = "tesla";
+    var model = "Model 3";
+    var price = "35000";
+
+    function TeslaAutoPilot()
+    {
+        document.write("This car is in auto pilot mode");
+    }
+    TeslaAutoPilot();
+    */
+/*
+    var car = {
+        brand : "Tesla",
+        model : "Model 3",
+        price : 35000,
+        teslaAutoPilot : function()
+        {
+            document.write("This is in auto pilot mode");
+        }
+
+    }
+    //car.teslaAutoPilot();
+
+    document.write(car.brand+" "+car.model+" "+car.price);
+    */
+
+
+    //Object Constructor
+/*
+    function car(brand,model,price)
+    {
+        this.brand = brand;
+        this.model = model;
+        this.price = price; 
+        this.teslaAutoPilot = function()
+        {
+            document.write("<h3>Tahera</h3>");
+        }
+    }
+ 
+    var c1 = new car("Tesla","Model 3","Price");
+    var c2 = new car("aksah","ok","354");
+
+    c1.teslaAutoPilot();
+    document.write("<h3>"+c2.brand+"</h3>")
+    */
+
+
+    function buttonClick()
+    {
+        //alert("You just clicked the button");
+        document.getElementById("ok").innerHTML="Saidur Rahman Akash";
+
+    }
+
+    function fun1()
+    {
+        var str = document.getElementById("text").value;
+        var str2 = document.getElementById("text2").value;
+        if(str==str2)
+        {
+            alert("You have entered the same value ");
+            
+        }
+        else
+        {
+            document.write("Login Succesfull");
+        }
+       
+    }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="buttonClick()"> Click Here</button>
+        <h2 id="ok"> Here the output will display</h2>
+
+        <h3>This is a login Form</h3>
+        <input id="text" placeholder="Enter your Name Here">
+    
+        <br>
+        <input type="password" id="text2" placeholder="Enter your Password Here">
+        <br>
+        <button onclick="fun1()" id="btn"> Click Here </button>
+
+
+
+
+
+    </body>
+</html>

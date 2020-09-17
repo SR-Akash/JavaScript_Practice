@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function valid()
+    {
+        var username = document.getElementById("uname").value;
+        var xx = /[^abc]/i; //i is for case sensitivity check of E00
+        if(xx.test(username))
+        {
+            alert("valid User Name");
+        }
+              
+        else
+        {
+            document.getElementById("id1").style.visibility="visible";
+            //alert("Invalid User Name");
+        }
+        
+    }
+
+    </script>
+</head>
+<body>
+    <form action="message.html">
+        <input id="uname" placeholder="Username" type="text">
+        <label id="id1" style="color:red; visibility: hidden;" >Invalid User Name</label>
+        <br>
+        <br>
+        
+        <button onclick="valid()" type="button" >Submit </button>
+    </form>
+    
+</body>
+</html>

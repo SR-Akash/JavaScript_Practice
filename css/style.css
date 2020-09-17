@@ -1,0 +1,23 @@
+.divss{
+    width: 300px;
+    border:2px solid blue ;
+    margin: 5px;
+    padding: 10px;
+}
+.divss p{
+    color:darkcyan;
+    
+}
+.newdivss{
+    border-radius: 15px;
+    background-color: darkkhaki;
+
+}
+.cube{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    padding: 23px;
+    margin: 20px;
+    display: inline-block;
+}

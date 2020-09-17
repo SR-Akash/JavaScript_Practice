@@ -1,0 +1,43 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+       <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+       <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+      <h2>Draggble Feature in JQuery</h2>
+      <div id="divss" style="border: 1px solid;">
+          <div class="cube">
+            <h3>
+                cube 1
+            </h3>
+          </div>
+          <div class="cube">
+            <h3>
+                cube 2
+            </h3>
+          </div>
+          <div class="cube">
+            <h3>
+                cube 3
+            </h3>
+          </div>
+      </div>
+
+    </body>
+
+   <script src="jquery.js" type="text/javascript"></script>
+   <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+   <script>
+      $("#divss").sortable({
+          distance:50,
+          opacity:0.5,
+          containment:"parent",
+          helper:"clone",
+          scroll:true
+      });
+   </script>
+   
+</html>
